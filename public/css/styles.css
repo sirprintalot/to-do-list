@@ -1,0 +1,141 @@
+
+body {
+    width: 100%;
+    height: auto;
+    background: rgb(131, 164, 203);
+    background: -moz-linear-gradient(180deg, rgba(131, 164, 203, 1) 0%, rgba(249, 183, 139, 1) 40%, rgba(255, 253, 52, 1) 75%);
+    background: -webkit-linear-gradient(180deg, rgba(131, 164, 203, 1) 0%, rgba(249, 183, 139, 1) 40%, rgba(255, 253, 52, 1) 75%);
+    background: linear-gradient(180deg, rgba(131, 164, 203, 1) 0%, rgba(249, 183, 139, 1) 40%, rgba(255, 253, 52, 1) 75%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#83a4cb", endColorstr="#fffd34", GradientType=1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html {
+    min-height: 100%;
+}
+
+main{
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+margin-top: 50px;
+}
+h1 {
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.box {
+    width: 400px;
+    max-width: 400px;
+    margin: 20px auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+}
+
+#heading {
+    background-color:rgb(54, 107, 207);
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.item {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+item:last-child {
+    border-bottom: 0;
+}
+
+input:checked+p{
+    text-decoration: line-through;
+    text-decoration-color: green ;
+}
+
+input[type="checkbox"]{
+    margin:20px;
+}
+
+p {
+    margin: 0;
+    padding: 20px;
+    font-size: 20px; 
+    font-weight: 200;
+    color: #00204a;  
+} 
+
+form {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    min-height: 50px;
+    width: 50px;
+    margin: 15px;
+    border-radius: 50%;
+    border-color: transparent;
+    background-color:rgb(54, 107, 207);
+    color: #fff;
+    border-width: 0;
+    font-size: 25px;
+    transition: all .3s ease-in-out;
+}
+
+button:hover{
+    transform: scale(1.15);
+}
+
+button:active{
+    background-color: #A683E3;
+    transform: rotate(90deg);
+}
+
+
+input[type="text"] {
+    text-align: center;
+    height: 60px;
+    top: 10px;
+    border: none ;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 200;
+    width: 95%;
+}
+
+input[type="text"]:focus {
+    outline: none;
+    box-shadow: inset 0 -2px 0 0 #A683E3;
+}
+
+::placeholder{
+    color: gray;
+    opacity: 0.8;
+}
+
+footer{    
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    bottom: 0px;
+    margin: 0;
+    padding:  0;
+}
+
+footer p{
+    font-size: 10px;
+    font-weight: bold;
+    margin: 5px;
+    padding: 0;
+}
